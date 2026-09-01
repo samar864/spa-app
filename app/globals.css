@@ -1,0 +1,4 @@
+/* Component-safe overrides for the Next.js app. */
+.reviews blockquote footer{background:none;padding:0;color:#8b6a35;display:block;margin-top:28px;font:700 9px var(--sans);letter-spacing:1.4px}
+.confirmation-details{border-top:1px solid #d8cebf;border-bottom:1px solid #d8cebf;padding:16px 0;margin:21px 0;color:#56645a;font-size:13px;line-height:1.9}
+.confirmation-details strong{color:var(--green)}

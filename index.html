@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Thai Spa — a peaceful Thai-inspired wellness sanctuary for massage, spa rituals, and restorative care." />
+    <meta name="theme-color" content="#173d32" />
+    <title>Thai Spa | Relax. Rejuvenate. Rediscover Yourself.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Thai Spa home"><span class="brand-mark">✦</span><span>THAI<br /><em>SPA</em></span></a>
+      <nav id="main-nav" class="main-nav" aria-label="Main navigation">
+        <a href="#about">About</a><a href="#services">Services</a><a href="#offers">Offers</a><a href="#facilities">Facilities</a><a href="#reviews">Reviews</a><a href="#contact">Contact</a>
+      </nav>
+      <a class="header-cta" href="#booking">Book a ritual <span>↗</span></a>
+      <button class="menu-button" aria-controls="main-nav" aria-expanded="false" aria-label="Open menu">☰</button>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-copy">
+          <p class="eyebrow light">THAI-INSPIRED WELLNESS</p>
+          <h1>Your journey to<br /><i>deep relaxation</i><br />begins here.</h1>
+          <p class="hero-text">Experience thoughtful therapies that soften the body, quieten the mind, and return you to yourself.</p>
+          <div class="hero-actions"><a class="button gold" href="#booking">Book an appointment <span>→</span></a><a class="text-link" href="#services">Explore therapies <span>↓</span></a></div>
+          <div class="hero-trust"><span>✦ Professional therapists</span><span>✦ Premium products</span><span>✦ Peaceful ambience</span></div>
+        </div>
+        <div class="hero-bottom"><span>SCROLL TO DISCOVER</span><span class="scroll-line"></span><span>01 / 07</span></div>
+      </section>
+
+      <section class="booking-wrap" id="booking">
+        <div class="booking-intro"><p class="eyebrow">RESERVE YOUR TIME</p><h2>A moment made<br />just for <i>you.</i></h2></div>
+        <form class="booking-form" id="booking-form">
+          <label>Choose a therapy<select id="service-select" required><option value="Traditional Thai Massage" data-price="1499">Traditional Thai Massage — ₹1,499</option><option value="Aroma Oil Massage" data-price="1799">Aroma Oil Massage — ₹1,799</option><option value="Couple's Retreat" data-price="4999">Couple's Retreat — ₹4,999</option><option value="Royal Thai Experience" data-price="3499">Royal Thai Experience — ₹3,499</option></select></label>
+          <label>Preferred date<input id="booking-date" type="date" required /></label>
+          <label>Arrival time<select id="time-select" required><option>11:00 AM</option><option>01:00 PM</option><option>03:00 PM</option><option>05:00 PM</option><option>07:00 PM</option></select></label>
+          <label>Guests<select id="guests"><option>1 Guest</option><option>2 Guests</option></select></label>
+          <button class="button dark" type="submit">Check availability <span>→</span></button>
+        </form>
+      </section>
+
+      <section class="about section" id="about">
+        <div class="about-image image-card"><img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=85" alt="Serene Thai Spa treatment room" /><span class="image-note">EST. 2018<br /><b>THAI SPA</b></span></div>
+        <div class="about-copy"><p class="eyebrow">OUR PHILOSOPHY</p><h2>A sanctuary away<br />from the <i>everyday.</i></h2><p>At Thai Spa, ancient Thai healing traditions meet a modern sense of calm. Every detail — from the botanical oils to the quiet aftercare — is shaped to help you feel deeply restored.</p><p>Our experienced therapists listen carefully, then tailor your ritual around what your body needs most.</p><a class="arrow-link" href="#facilities">Discover our sanctuary <span>→</span></a></div>
+      </section>
+
+      <section class="services section" id="services">
+        <div class="section-head"><div><p class="eyebrow">OUR THERAPIES</p><h2>Find your <i>ritual.</i></h2></div><a class="arrow-link" href="#booking">View all therapies <span>→</span></a></div>
+        <div class="filters"><button class="active" data-filter="all">All therapies</button><button data-filter="thai">Thai massage</button><button data-filter="oil">Oil massage</button><button data-filter="couples">Couples</button><button data-filter="wellness">Wellness</button></div>
+        <div class="service-grid">
+          <article class="service-card" data-category="thai"><img src="https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?auto=format&fit=crop&w=900&q=80" alt="Traditional Thai massage" /><div><p class="service-meta">60 MINUTES <span>₹1,499</span></p><h3>Traditional Thai<br />Massage</h3><p>Rhythmic stretching and pressure to revive energy and release tension.</p><button class="book-service" data-service="Traditional Thai Massage">Reserve this ritual →</button></div></article>
+          <article class="service-card" data-category="oil"><img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=900&q=80" alt="Aroma oil spa ritual" /><div><p class="service-meta">60 MINUTES <span>₹1,799</span></p><h3>Aroma Oil<br />Massage</h3><p>Warm aromatic oils and flowing strokes for complete release.</p><button class="book-service" data-service="Aroma Oil Massage">Reserve this ritual →</button></div></article>
+          <article class="service-card" data-category="wellness"><img src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?auto=format&fit=crop&w=900&q=80" alt="Herbal wellness treatment" /><div><p class="service-meta">90 MINUTES <span>₹2,499</span></p><h3>Thai Herbal<br />Massage</h3><p>A warm herbal compress ritual to soothe tired muscles.</p><button class="book-service" data-service="Thai Herbal Massage">Reserve this ritual →</button></div></article>
+          <article class="service-card" data-category="couples"><img src="https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&w=900&q=80" alt="Private couples massage room" /><div><p class="service-meta">90 MINUTES <span>₹4,499</span></p><h3>Couple<br />Spa</h3><p>A private escape for two, with a shared sense of renewal.</p><button class="book-service" data-service="Couple's Retreat">Reserve this ritual →</button></div></article>
+        </div>
+      </section>
+
+      <section class="experience"><div class="experience-copy"><p class="eyebrow light">THE THAI SPA EXPERIENCE</p><h2>Leave feeling<br /><i>lighter than air.</i></h2></div><div class="steps"><div><span>01</span><h3>Arrive</h3><p>Leave the outside world at the door.</p></div><div><span>02</span><h3>Relax</h3><p>Let expert hands take care of you.</p></div><div><span>03</span><h3>Rejuvenate</h3><p>Step out refreshed and renewed.</p></div></div></section>
+
+      <section class="offers section" id="offers"><p class="eyebrow center">A LITTLE EXTRA CALM</p><h2 class="center">Relax more. <i>Save more.</i></h2><div class="offer-grid"><article><p>FIRST VISIT OFFER</p><strong>20% <em>OFF</em></strong><span>For your first moment of self-care with us.</span><button class="claim-offer" data-code="FIRST20">Claim offer →</button></article><article class="featured"><p>WEEKDAY WELLNESS</p><strong>25% <em>OFF</em></strong><span>Monday to Thursday · 11 AM to 4 PM</span><button class="claim-offer" data-code="WEEKDAY25">Reserve now →</button></article><article><p>COUPLE'S ESCAPE</p><strong>15% <em>OFF</em></strong><span>On any qualifying shared spa experience.</span><button class="claim-offer" data-code="COUPLE15">Book for two →</button></article></div></section>
+
+      <section class="facilities section" id="facilities"><div class="section-head"><div><p class="eyebrow">OUR SPACE</p><h2>Made for <i>unwinding.</i></h2></div><p class="facilities-note">Every element of Thai Spa has been considered for your comfort and care. Facilities may vary by location.</p></div><div class="facility-grid"><div class="facility-tall"><img src="https://images.unsplash.com/photo-1560750588-73207b1ef5b8?auto=format&fit=crop&w=1000&q=80" alt="Spa relaxation lounge" /><p>Quiet relaxation lounge</p></div><div class="facility-list"><span>Private treatment rooms</span><span>Luxury couples suites</span><span>Herbal tea ritual</span><span>Premium essential oils</span><span>Fresh linens & robes</span><span>Easy on-site parking</span></div><div class="facility-small"><img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=1000&q=80" alt="Calm spa details" /><p>Botanical care, everywhere</p></div></div></section>
+
+      <section class="reviews section" id="reviews"><div class="rating"><span>4.9</span><div>★★★★★<small>BASED ON 500+ GUEST REVIEWS</small></div></div><blockquote>“Beautiful ambience and an incredibly relaxing experience. My therapist was attentive from the first minute to the last.”<footer>— PRIYA M., VERIFIED GUEST</footer></blockquote><div class="review-controls"><button aria-label="Previous review">←</button><button aria-label="Next review">→</button></div></section>
+
+      <section class="contact" id="contact"><div><p class="eyebrow light">A MOMENT OF CALM AWAITS</p><h2>Ready to feel<br /><i>like yourself again?</i></h2><a class="button gold" href="#booking">Book an appointment <span>→</span></a></div><div class="contact-details"><p><b>VISIT US</b><br />123 Wellness Lane, Your City<br />India 000000</p><p><b>OPEN DAILY</b><br />10:00 AM — 10:00 PM<br /><span class="open">● OPEN NOW</span></p><p><b>SPEAK WITH US</b><br /><a href="tel:+910000000000">+91 00000 00000</a><br /><a href="mailto:hello@thaispa.in">hello@thaispa.in</a></p></div></section>
+    </main>
+    <footer><a class="brand" href="#home"><span class="brand-mark">✦</span><span>THAI<br /><em>SPA</em></span></a><p>Relax. Rejuvenate. Rediscover Yourself.</p><span>© 2026 Thai Spa. All rights reserved.</span></footer>
+    <a class="whatsapp" target="_blank" rel="noreferrer" href="https://wa.me/910000000000?text=Hi%2C%20I%20would%20like%20to%20book%20an%20appointment%20at%20Thai%20Spa.%20Please%20help%20me%20with%20available%20slots." aria-label="Book on WhatsApp">◔<small>WhatsApp</small></a>
+    <div class="modal" id="confirmation" aria-hidden="true"><div class="modal-card"><button class="close-modal" aria-label="Close confirmation">×</button><span class="confirmation-icon">✓</span><p class="eyebrow">AVAILABILITY CONFIRMED</p><h2>Your ritual is<br /><i>reserved.</i></h2><div id="confirmation-details"></div><a class="button dark" id="whatsapp-confirm" target="_blank" rel="noreferrer">Confirm on WhatsApp <span>→</span></a></div></div>
+    <script src="app.js"></script>
+  </body>
+</html>
